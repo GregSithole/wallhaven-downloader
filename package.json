@@ -2,35 +2,34 @@
   "name": "@gregsithole/wallhaven-downloader",
   "version": "1.0.0",
   "description": "A command line tool used to download Wallhaven Wallpapers",
-  "main": "bin/index.js",
+  "main": "src/index.js",
   "bin": {
-    "@gregsithole/wallhaven-downloader": "bin/index.js",
-    "wallhaven-downloader": "bin/index.js"
+    "@gregsithole/wallhaven-downloader": "bin/wallhaven-downloader",
+    "wallhaven-downloader": "bin/wallhaven-downloader"
+  },
+  "publishConfig": {
+    "access": "public"
   },
   "scripts": {
-    "build": "tsc",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "git@github.com:GregSithole/wallhaven-downloader.git"
+    "url": "git@github.com-personal:GregSithole/wallhaven-downloader.git"
   },
-  "author": "Greg Sithole",
-  "license": "MIT",
   "keywords": [
     "cli",
-    "node",
-    "typescript",
-    "npm",
     "wallhaven"
   ],
-  "devDependencies": {
-    "@types/node": "^16.11.9",
-    "typescript": "^4.5.2"
-  },
+  "author": "",
+  "license": "MIT",
   "dependencies": {
+    "axios": "^0.24.0",
     "chalk": "^4.1.2",
     "commander": "^8.3.0",
-    "conf": "^10.1.0"
+    "conf": "^10.1.0",
+    "esm": "^3.2.25",
+    "ora-classic": "^5.4.2",
+    "prompts": "^2.4.2"
   }
 }
